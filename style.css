@@ -1,0 +1,10 @@
+body {
+	max-width: 33em;
+	margin: auto;
+	padding: 0 .5em;
+}
+@media print {
+	body {
+		max-width: none;
+	}
+}

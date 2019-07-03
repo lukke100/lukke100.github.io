@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang=en>
+<link href=style.css rel=stylesheet>
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=manifest href=/site.webmanifest>
+<link rel=mask-icon href=/safari-pinned-tab.svg color=#7f3fff>
+<meta name=msapplication-TileColor content=#7f3fff>
+<meta name=theme-color content=#7f3fff>
+<meta charset=utf-8>
+<meta name=viewport content='initial-scale=1, width=device-width'>
+<script src=point-buy.js></script>
+<title>Point Buy Calculator</title>
+<h1>Point Buy Calculator</h1>
+<dl>
+	<dt>Standard Fantasy
+	<dd>7000
+</dl>
+<form>
+<table>
+<tr>
+	<th scope=col>Ability
+	<th scope=col>Score
+	<th scope=col>Cost
+<tr>
+	<th scope=row>Strength
+	<td><input id=str-score min=3 max=18 step=1 title='Strength Score' type=number value=10>
+	<td><input id=str-cost readonly title='Strength Cost' value=325>
+<tr>
+	<th scope=row>Dexterity
+	<td><input id=dex-score min=3 max=18 step=1 title='Dexterity Score' type=number value=10>
+	<td><input id=dex-cost readonly title='Dexterity Cost' value=325>
+<tr>
+	<th scope=row>Constitution
+	<td><input id=con-score min=3 max=18 step=1 title='Constitution Score' type=number value=10>
+	<td><input id=con-cost readonly title='Constitution Cost' value=325>
+<tr>
+	<th scope=row>Intelligence
+	<td><input id=int-score min=3 max=18 step=1 title='Intelligence Score' type=number value=10>
+	<td><input id=int-cost readonly title='Intelligence Cost' value=325>
+<tr>
+	<th scope=row>Wisdom
+	<td><input id=wis-score min=3 max=18 step=1 title='Wisdom Score' type=number value=10>
+	<td><input id=wis-cost readonly title='Wisdom Cost' value=325>
+<tr>
+	<th scope=row>Charisma
+	<td><input id=cha-score min=3 max=18 step=1 title='Charisma Score' type=number value=10>
+	<td><input id=cha-cost readonly title='Charisma Cost' value=325>
+<tr>
+	<th colspan=2 scope=row>Total
+	<td><input id=total-cost title='Total Cost' value=1950>
+</table>
+</form>

@@ -51,7 +51,7 @@ window.onload = function() {
 		             + +conCost.value + +intCost.value
 		             + +wisCost.value + +chaCost.value;
 
-		if (typeof result === 'number') {
+		if (typeof result === 'number' && !isNaN(result)) {
 			totalCost.value = result;
 		} else {
 			totalCost.value = undefined;

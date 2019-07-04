@@ -1,61 +1,152 @@
 <!DOCTYPE html>
 <html lang=en>
-<link href=style.css rel=stylesheet>
+<link rel=stylesheet href=style.css>
+<link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css integrity=sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS crossorigin=anonymous>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=manifest href=/site.webmanifest>
 <link rel=mask-icon href=/safari-pinned-tab.svg color=#7f3fff>
+<meta charset=utf-8>
 <meta name=msapplication-TileColor content=#7f3fff>
 <meta name=theme-color content=#7f3fff>
-<meta charset=utf-8>
 <meta name=viewport content='initial-scale=1, width=device-width'>
 <script src=point-buy.js></script>
 <title>Point Buy Calculator</title>
+<body class=container-fluid>
 <h1>Point Buy Calculator</h1>
 <dl>
 	<dt>Standard Fantasy
 	<dd>7000
 </dl>
 <form>
-<table>
-<tr>
-	<th scope=col>Ability
-	<th scope=col>Score
-	<th scope=col>Modifier
-	<th scope=col>Cost
-<tr>
-	<th scope=row>Strength
-	<td><input id=str-score min=3 max=18 step=1 title='Strength Score' type=number value=10>
-	<td><input id=str-mod readonly title='Strength Modifier' value='+0'>
-	<td><input id=str-cost readonly title='Strength Cost' value=325>
-<tr>
-	<th scope=row>Dexterity
-	<td><input id=dex-score min=3 max=18 step=1 title='Dexterity Score' type=number value=10>
-	<td><input id=dex-mod readonly title='Dexterity Modifier' value='+0'>
-	<td><input id=dex-cost readonly title='Dexterity Cost' value=325>
-<tr>
-	<th scope=row>Constitution
-	<td><input id=con-score min=3 max=18 step=1 title='Constitution Score' type=number value=10>
-	<td><input id=con-mod readonly title='Constitution Modifier' value='+0'>
-	<td><input id=con-cost readonly title='Constitution Cost' value=325>
-<tr>
-	<th scope=row>Intelligence
-	<td><input id=int-score min=3 max=18 step=1 title='Intelligence Score' type=number value=10>
-	<td><input id=int-mod readonly title='Intelligence Modifier' value='+0'>
-	<td><input id=int-cost readonly title='Intelligence Cost' value=325>
-<tr>
-	<th scope=row>Wisdom
-	<td><input id=wis-score min=3 max=18 step=1 title='Wisdom Score' type=number value=10>
-	<td><input id=wis-mod readonly title='Wisdom Modifier' value='+0'>
-	<td><input id=wis-cost readonly title='Wisdom Cost' value=325>
-<tr>
-	<th scope=row>Charisma
-	<td><input id=cha-score min=3 max=18 step=1 title='Charisma Score' type=number value=10>
-	<td><input id=cha-mod readonly title='Charisma Modifier' value='+0'>
-	<td><input id=cha-cost readonly title='Charisma Cost' value=325>
-<tr>
-	<th colspan=3 scope=row>Total
-	<td><input id=total-cost title='Total Cost' value=1950>
-</table>
+<div class='form-row align-items-end'>
+	<div class='col-12 col-sm-6 form-group'>
+		<label class=col-form-label for=str-score>Strength Score</label>
+		<div class=input-group>
+			<input class=form-control id=str-score min=3 max=18 step=1 type=number value=10>
+			<div class=input-group-append>
+				<button class='btn btn-outline-secondary' id=str-minus type=button>-</button>
+				<button class='btn btn-outline-secondary' id=str-plus type=button>+</button>
+			</div>
+		</div>
+	</div>
+	<div class='col-6 col-sm-3 form-group'>
+		<label class=col-form-label for=str-mod>Strength Modifier</label>
+		<input class=form-control id=str-mod readonly value=+0>
+	</div>
+	<div class='col-6 col-sm-3 form-group'>
+		<label class=col-form-label for=str-cost>Strength Cost</label>
+		<input class=form-control id=str-cost readonly value=325>
+	</div>
+</div>
+<div class='form-row align-items-end'>
+	<div class='col-12 col-sm-6 form-group'>
+		<label class=col-form-label for=dex-score>Dexterity Score</label>
+		<div class=input-group>
+			<input class=form-control id=dex-score min=3 max=18 step=1 type=number value=10>
+			<div class=input-group-append>
+				<button class='btn btn-outline-secondary' id=dex-minus type=button>-</button>
+				<button class='btn btn-outline-secondary' id=dex-plus type=button>+</button>
+			</div>
+		</div>
+	</div>
+	<div class='col-6 col-sm-3 form-group'>
+		<label class=col-form-label for=dex-mod>Dexterity Modifier</label>
+		<input class=form-control id=dex-mod readonly value=+0>
+	</div>
+	<div class='col-6 col-sm-3 form-group'>
+		<label class=col-form-label for=dex-cost>Dexterity Cost</label>
+		<input class=form-control id=dex-cost readonly value=325>
+	</div>
+</div>
+<div class='form-row align-items-end'>
+	<div class='col-12 col-sm-6 form-group'>
+		<label class=col-form-label for=con-score>Constitution Score</label>
+		<div class=input-group>
+			<input class=form-control id=con-score min=3 max=18 step=1 type=number value=10>
+			<div class=input-group-append>
+				<button class='btn btn-outline-secondary' id=con-minus type=button>-</button>
+				<button class='btn btn-outline-secondary' id=con-plus type=button>+</button>
+			</div>
+		</div>
+	</div>
+	<div class='col-6 col-sm-3 form-group'>
+		<label class=col-form-label for=con-mod>Constitution Modifier</label>
+		<input class=form-control id=con-mod readonly value=+0>
+	</div>
+	<div class='col-6 col-sm-3 form-group'>
+		<label class=col-form-label for=con-cost>Constitution Cost</label>
+		<input class=form-control id=con-cost readonly value=325>
+	</div>
+</div>
+<div class='form-row align-items-end'>
+	<div class='col-12 col-sm-6 form-group'>
+		<label class=col-form-label for=int-score>Intelligence Score</label>
+		<div class=input-group>
+			<input class=form-control id=int-score min=3 max=18 step=1 type=number value=10>
+			<div class=input-group-append>
+				<button class='btn btn-outline-secondary' id=int-minus type=button>-</button>
+				<button class='btn btn-outline-secondary' id=int-plus type=button>+</button>
+			</div>
+		</div>
+	</div>
+	<div class='col-6 col-sm-3 form-group'>
+		<label class=col-form-label for=int-mod>Intelligence Modifier</label>
+		<input class=form-control id=int-mod readonly value=+0>
+	</div>
+	<div class='col-6 col-sm-3 form-group'>
+		<label class=col-form-label for=int-cost>Intelligence Cost</label>
+		<input class=form-control id=int-cost readonly value=325>
+	</div>
+</div>
+<div class='form-row align-items-end'>
+	<div class='col-12 col-sm-6 form-group'>
+		<label class=col-form-label for=wis-score>Wisdom Score</label>
+		<div class=input-group>
+			<input class=form-control id=wis-score min=3 max=18 step=1 type=number value=10>
+			<div class=input-group-append>
+				<button class='btn btn-outline-secondary' id=wis-minus type=button>-</button>
+				<button class='btn btn-outline-secondary' id=wis-plus type=button>+</button>
+			</div>
+		</div>
+	</div>
+	<div class='col-6 col-sm-3 form-group'>
+		<label class=col-form-label for=wis-mod>Wisdom Modifier</label>
+		<input class=form-control id=wis-mod readonly value=+0>
+	</div>
+	<div class='col-6 col-sm-3 form-group'>
+		<label class=col-form-label for=wis-cost>Wisdom Cost</label>
+		<input class=form-control id=wis-cost readonly value=325>
+	</div>
+</div>
+<div class='form-row align-items-end'>
+	<div class='col-12 col-sm-6 form-group'>
+		<label class=col-form-label for=cha-score>Charisma Score</label>
+		<div class=input-group>
+			<input class=form-control id=cha-score min=3 max=18 step=1 type=number value=10>
+			<div class=input-group-append>
+				<button class='btn btn-outline-secondary' id=cha-minus type=button>-</button>
+				<button class='btn btn-outline-secondary' id=cha-plus type=button>+</button>
+			</div>
+		</div>
+	</div>
+	<div class='col-6 col-sm-3 form-group'>
+		<label class=col-form-label for=cha-mod>Charisma Modifier</label>
+		<input class=form-control id=cha-mod readonly value=+0>
+	</div>
+	<div class='col-6 col-sm-3 form-group'>
+		<label class=col-form-label for=cha-cost>Charisma Cost</label>
+		<input class=form-control id=cha-cost readonly value=325>
+	</div>
+</div>
+<div class='form-row justify-content-end'>
+<div class='col-6 col-sm-3 form-group'>
+	<label class=col-form-label for=total-cost>Total Cost</label>
+	<input class=form-control id=total-cost readonly value=1950>
+</div>
+</div>
 </form>
+<script src=https://code.jquery.com/jquery-3.3.1.slim.min.js integrity=sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js integrity=sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut crossorigin=anonymous></script>
+<script src=https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js integrity=sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k crossorigin=anonymous></script>

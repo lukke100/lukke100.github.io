@@ -1,18 +1,5 @@
 body {
-	max-width: 33em;
-	margin: auto;
-	padding: 0 .5em;
-}
-input {
-	box-sizing: border-box;
-	text-align: right;
-	width: 100%;
-}
-table {
-	width: 100%;
-}
-th[scope=row] {
-	text-align: left;
+	max-width: 48em;
 }
 @media print {
 	body {

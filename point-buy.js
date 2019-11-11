@@ -5,22 +5,22 @@ window.onload = function() {
 		undefined, //  0
 		undefined, //  1
 		undefined, //  2
-		        0, //  3
-		        5, //  4
-		       10, //  5
-		       20, //  6
-		       50, //  7
-		      100, //  8
-		      200, //  9
-		      325, // 10
-		      550, // 11
-		      825, // 12
-		     1250, // 13
-		     1750, // 14
-		     2500, // 15
-		     3500, // 16
-		     5000, // 17
-		     7000, // 18
+		undefined, //  3
+		undefined, //  4
+		undefined, //  5
+		undefined, //  6
+		        0, //  7
+		        5, //  8
+		       10, //  9
+		       20, // 10
+		       35, // 11
+		       55, // 12
+		       85, // 13
+		      125, // 14
+		      175, // 15
+		      250, // 16
+		      350, // 17
+		      500, // 18
 	];
 
 	const strScore = document.querySelector('#str-score');
@@ -75,7 +75,7 @@ window.onload = function() {
 	});
 
 	document.querySelector('#str-minus').addEventListener('click', function(e) {
-		strScore.value = Math.max(3, +strScore.value - 1);
+		strScore.value = Math.max(7, +strScore.value - 1);
 		strMod.value = calcModifier(strScore.value);
 		strCost.value = costs[strScore.value];
 		updateTotal();
@@ -96,7 +96,7 @@ window.onload = function() {
 	});
 
 	document.querySelector('#dex-minus').addEventListener('click', function(e) {
-		dexScore.value = Math.max(3, +dexScore.value - 1);
+		dexScore.value = Math.max(7, +dexScore.value - 1);
 		dexMod.value = calcModifier(dexScore.value);
 		dexCost.value = costs[dexScore.value];
 		updateTotal();
@@ -117,7 +117,7 @@ window.onload = function() {
 	});
 
 	document.querySelector('#con-minus').addEventListener('click', function(e) {
-		conScore.value = Math.max(3, +conScore.value - 1);
+		conScore.value = Math.max(7, +conScore.value - 1);
 		conMod.value = calcModifier(conScore.value);
 		conCost.value = costs[conScore.value];
 		updateTotal();
@@ -138,7 +138,7 @@ window.onload = function() {
 	});
 
 	document.querySelector('#int-minus').addEventListener('click', function(e) {
-		intScore.value = Math.max(3, +intScore.value - 1);
+		intScore.value = Math.max(7, +intScore.value - 1);
 		intMod.value = calcModifier(intScore.value);
 		intCost.value = costs[intScore.value];
 		updateTotal();
@@ -159,7 +159,7 @@ window.onload = function() {
 	});
 
 	document.querySelector('#wis-minus').addEventListener('click', function(e) {
-		wisScore.value = Math.max(3, +wisScore.value - 1);
+		wisScore.value = Math.max(7, +wisScore.value - 1);
 		wisMod.value = calcModifier(wisScore.value);
 		wisCost.value = costs[wisScore.value];
 		updateTotal();
@@ -180,7 +180,7 @@ window.onload = function() {
 	});
 
 	document.querySelector('#cha-minus').addEventListener('click', function(e) {
-		chaScore.value = Math.max(3, +chaScore.value - 1);
+		chaScore.value = Math.max(7, +chaScore.value - 1);
 		chaMod.value = calcModifier(chaScore.value);
 		chaCost.value = costs[chaScore.value];
 		updateTotal();

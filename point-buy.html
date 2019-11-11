@@ -17,14 +17,14 @@
 <h1>Point Buy Calculator</h1>
 <dl>
 	<dt>Standard Fantasy
-	<dd>7000
+	<dd>480
 </dl>
-<form>
+<form class=point-buy>
 <div class='form-row align-items-end'>
 	<div class='col-12 col-sm-6 form-group'>
 		<label class=col-form-label for=str-score>Strength Score</label>
 		<div class=input-group>
-			<input class=form-control id=str-score min=3 max=18 required step=1 type=number value=10>
+			<input class=form-control id=str-score min=7 max=18 required step=1 type=number value=10>
 			<div class=input-group-append>
 				<button class='btn btn-outline-secondary' id=str-minus type=button>−</button>
 				<button class='btn btn-outline-secondary' id=str-plus type=button>+</button>
@@ -37,14 +37,14 @@
 	</div>
 	<div class='col-6 col-sm-3 form-group'>
 		<label class=col-form-label for=str-cost>Strength Cost</label>
-		<input class=form-control id=str-cost readonly value=325>
+		<input class=form-control id=str-cost readonly value=20>
 	</div>
 </div>
 <div class='form-row align-items-end'>
 	<div class='col-12 col-sm-6 form-group'>
 		<label class=col-form-label for=dex-score>Dexterity Score</label>
 		<div class=input-group>
-			<input class=form-control id=dex-score min=3 max=18 required step=1 type=number value=10>
+			<input class=form-control id=dex-score min=7 max=18 required step=1 type=number value=10>
 			<div class=input-group-append>
 				<button class='btn btn-outline-secondary' id=dex-minus type=button>−</button>
 				<button class='btn btn-outline-secondary' id=dex-plus type=button>+</button>
@@ -57,14 +57,14 @@
 	</div>
 	<div class='col-6 col-sm-3 form-group'>
 		<label class=col-form-label for=dex-cost>Dexterity Cost</label>
-		<input class=form-control id=dex-cost readonly value=325>
+		<input class=form-control id=dex-cost readonly value=20>
 	</div>
 </div>
 <div class='form-row align-items-end'>
 	<div class='col-12 col-sm-6 form-group'>
 		<label class=col-form-label for=con-score>Constitution Score</label>
 		<div class=input-group>
-			<input class=form-control id=con-score min=3 max=18 required step=1 type=number value=10>
+			<input class=form-control id=con-score min=7 max=18 required step=1 type=number value=10>
 			<div class=input-group-append>
 				<button class='btn btn-outline-secondary' id=con-minus type=button>−</button>
 				<button class='btn btn-outline-secondary' id=con-plus type=button>+</button>
@@ -77,14 +77,14 @@
 	</div>
 	<div class='col-6 col-sm-3 form-group'>
 		<label class=col-form-label for=con-cost>Constitution Cost</label>
-		<input class=form-control id=con-cost readonly value=325>
+		<input class=form-control id=con-cost readonly value=20>
 	</div>
 </div>
 <div class='form-row align-items-end'>
 	<div class='col-12 col-sm-6 form-group'>
 		<label class=col-form-label for=int-score>Intelligence Score</label>
 		<div class=input-group>
-			<input class=form-control id=int-score min=3 max=18 required step=1 type=number value=10>
+			<input class=form-control id=int-score min=7 max=18 required step=1 type=number value=10>
 			<div class=input-group-append>
 				<button class='btn btn-outline-secondary' id=int-minus type=button>−</button>
 				<button class='btn btn-outline-secondary' id=int-plus type=button>+</button>
@@ -97,14 +97,14 @@
 	</div>
 	<div class='col-6 col-sm-3 form-group'>
 		<label class=col-form-label for=int-cost>Intelligence Cost</label>
-		<input class=form-control id=int-cost readonly value=325>
+		<input class=form-control id=int-cost readonly value=20>
 	</div>
 </div>
 <div class='form-row align-items-end'>
 	<div class='col-12 col-sm-6 form-group'>
 		<label class=col-form-label for=wis-score>Wisdom Score</label>
 		<div class=input-group>
-			<input class=form-control id=wis-score min=3 max=18 required step=1 type=number value=10>
+			<input class=form-control id=wis-score min=7 max=18 required step=1 type=number value=10>
 			<div class=input-group-append>
 				<button class='btn btn-outline-secondary' id=wis-minus type=button>−</button>
 				<button class='btn btn-outline-secondary' id=wis-plus type=button>+</button>
@@ -117,14 +117,14 @@
 	</div>
 	<div class='col-6 col-sm-3 form-group'>
 		<label class=col-form-label for=wis-cost>Wisdom Cost</label>
-		<input class=form-control id=wis-cost readonly value=325>
+		<input class=form-control id=wis-cost readonly value=20>
 	</div>
 </div>
 <div class='form-row align-items-end'>
 	<div class='col-12 col-sm-6 form-group'>
 		<label class=col-form-label for=cha-score>Charisma Score</label>
 		<div class=input-group>
-			<input class=form-control id=cha-score min=3 max=18 required step=1 type=number value=10>
+			<input class=form-control id=cha-score min=7 max=18 required step=1 type=number value=10>
 			<div class=input-group-append>
 				<button class='btn btn-outline-secondary' id=cha-minus type=button>−</button>
 				<button class='btn btn-outline-secondary' id=cha-plus type=button>+</button>
@@ -137,13 +137,13 @@
 	</div>
 	<div class='col-6 col-sm-3 form-group'>
 		<label class=col-form-label for=cha-cost>Charisma Cost</label>
-		<input class=form-control id=cha-cost readonly value=325>
+		<input class=form-control id=cha-cost readonly value=20>
 	</div>
 </div>
 <div class='form-row justify-content-end'>
 <div class='col-6 col-sm-3 form-group'>
 	<label class=col-form-label for=total-cost>Total Cost</label>
-	<input class=form-control id=total-cost readonly value=1950>
+	<input class=form-control id=total-cost readonly value=120>
 </div>
 </div>
 </form>

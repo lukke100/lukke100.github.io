@@ -1,15 +1,8 @@
 body {
-	max-width: 48em;
-}
-/* Disable input arrows in Firefox */
-form.point-buy input {
-	-moz-appearance:textfield;
-}
-/* Disable input arrows in Chrome and Safari */
-form.point-buy input::-webkit-outer-spin-button,
-form.point-buy input::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
+	margin: 0 auto;
+	max-width: 36em;
+	padding: 0.5em;
+	text-align: justify;
 }
 @media print {
 	body {

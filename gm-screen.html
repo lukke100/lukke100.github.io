@@ -12,7 +12,7 @@
 <style>
 body {
 	margin: auto;
-	max-width: 36em;
+	max-width: 24em;
 	padding: 3px;
 }
 table {
@@ -29,11 +29,14 @@ tr {
 	padding: 0.5em 1.0em;
 	justify-content: space-between;
 }
+thead tr {
+	align-items: last baseline;
+}
 tbody > tr:last-child {
 	border-bottom: none;
 }
 th:first-child {
-	text-align: left;
+	text-align: start;
 }
 table sup {
 	display: inline-block;
